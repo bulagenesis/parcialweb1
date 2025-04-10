@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Fáciles | Mi Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <style>
+        
+        .article-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagenes/viajes-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 50px;
+        }
+        
+        
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 400px; 
+            margin: 2rem 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+        }
+        
+        
+        .article-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            transition: transform 0.4s ease-out;
+        }
+        
+        
+        .img-container:hover .article-img {
+            transform: scale(1.03);
+        }
+        
+        
+        .img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        
+        
+        .article-content h3 {
+            border-left: 4px solid #198754; 
+            padding-left: 15px;
+            margin: 2.5rem 0 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+    
+        @media (max-width: 768px) {
+            .img-container {
+                height: 300px; 
+            }
+            .article-header {
+                padding: 80px 0;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .img-container {
+                height: 450px; 
+            }
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body id="article-cocina">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cocina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header class="article-header text-center">
+        <div class="container">
+            <span class="badge bg-warning text-dark mb-3">Cocina</span>
+            <h1 class="display-4 fw-bold">Recetas fáciles con 5 ingredientes o menos</h1>
+            <p class="lead">Publicado el <span class="fw-bold">9 de Abril, 2025</span> por <span class="fw-bold">Chef María</span></p>
+        </div>
+    </header>
+
+    
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <article class="article-content">
+                    <p class="lead">Cuando el tiempo apremia pero quieres comer rico y casero, estas recetas te salvarán. Cada una requiere solo 5 ingredientes o menos, sin sacrificar sabor ni nutrición.</p>
+                    
+                    <h3>🟠 Lunes - Tostadas de aguacate con huevo</h3>
+                    <div class="img-container">
+                        <img src="imagen/huevos.jpg" alt="Tostadas de aguacate con huevo" class="article-img">
+                        <div class="img-caption">Desayuno nutritivo en menos de 10 minutos</div>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h5>Ingredientes:</h5>
+                        <ul>
+                            <li>Pan integral (2 rebanadas)</li>
+                            <li>Aguacate maduro (1 unidad)</li>
+                            <li>Huevos (2 unidades)</li>
+                            <li>Limón (½ unidad)</li>
+                            <li>Sal y pimienta al gusto</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-steps">
+                        <h5>Preparación:</h5>
+                        <ol>
+                            <li>Tuesta el pan hasta que quede crujiente</li>
+                            <li>Aplasta el aguacate con unas gotas de limón y sal</li>
+                            <li>Fríe o hierve los huevos al gusto</li>
+                            <li>Unta el aguacate sobre el pan y coloca los huevos encima</li>
+                        </ol>
+                    </div>
+                    
+                    <h3>🟡 Martes - Pasta con ajo y queso</h3>
+                    <div class="img-container">
+                        <img src="imagen/pasta.jpg" alt="Pasta con ajo y queso" class="article-img">
+                        <div class="img-caption">Comfort food clásica con pocos ingredientes</div>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h5>Ingredientes:</h5>
+                        <ul>
+                            <li>Pasta (200g)</li>
+                            <li>Ajo (4 dientes)</li>
+                            <li>Aceite de oliva virgen extra (3 cucharadas)</li>
+                            <li>Queso parmesano rallado (50g)</li>
+                            <li>Sal y perejil fresco (opcional)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-steps">
+                        <h5>Preparación:</h5>
+                        <ol>
+                            <li>Cocina la pasta al dente en agua con sal</li>
+                            <li>En una sartén, dora el ajo picado en aceite de oliva</li>
+                            <li>Escurre la pasta y mézclala con el aceite de ajo</li>
+                            <li>Añade queso rallado y mezcla bien</li>
+                        </ol>
+                    </div>
+                    
+                    
+                    
+                    <div class="recipe-tips mt-5">
+                        <div class="card border-warning">
+                            <div class="card-header bg-warning bg-opacity-10">
+                                <h4 class="mb-0">🔍 Tips del Chef</h4>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Puedes sustituir ingredientes según disponibilidad</li>
+                                    <li>Todas las recetas sirven 2 personas</li>
+                                    <li>Los tiempos de cocción son aproximados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="index.html" class="btn btn-outline-warning">
+                            <i class="bi bi-arrow-left"></i> Volver al blog
+                        </a>
+                        <div class="share-buttons">
+                            <span class="me-2">Compartir:</span>
+                            <a href="#" class="btn btn-outline-secondary me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-secondary me-2"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
